@@ -1,0 +1,26 @@
+.container-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(251, 250, 250);
+}
+
+.login-box {
+    box-shadow: 10px 10px 10px 0 rgb(183 192 206 / 20%);
+    -webkit-box-shadow: 0 0 10px 0 rgb(183 192 206 / 20%);
+    -moz-box-shadow: 0 0 10px 0 rgba(183, 192, 206, 0.2);
+}
+
+.image-container {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-height: 900px) {
+    .card {
+        margin-top: 200px;
+        margin-bottom: 100px;
+    }
+}

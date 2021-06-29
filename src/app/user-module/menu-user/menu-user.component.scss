@@ -1,0 +1,13 @@
+.image-container {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.mr-auto {
+    margin-right: 0 !important;
+}
+.navbar-toggleable-md .navbar-collapse {         
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;  
+} 

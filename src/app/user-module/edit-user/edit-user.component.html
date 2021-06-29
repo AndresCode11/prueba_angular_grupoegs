@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <form [formGroup]="form_edit">
+                <div class="mb-1 mt-2">
+                    <label class="mb-2" for="">Nombre</label>
+                    <input formControlName="firstName" type="text" minlength="3" class="form-control form-control-sm">
+                </div>
+                <div class="mb-1">
+                    <label class="mb-2" for="">Apellidos</label>
+                    <input formControlName="lastName" class="mt-2" type="text" class="form-control form-control-sm">
+                </div>
+                <div class="mb-1 mt-2">
+                    <label class="mb-2" for="">Email</label>
+                    <input formControlName="email" type="text" class="form-control form-control-sm">
+                </div>
+                <hr>
+                <div class="mb-1 mt-2">
+                    <label class="mb-2" for="">Tipo documento</label>
+                    <select formControlName="document_type" type="text" class="form-control form-control-sm">
+                        <option value="1" selected>Cedula</option>
+                        <option value="2">Registro Civil</option>
+                        <option value="3">Pasaporte</option>
+                    </select>
+                </div>
+                <div class="mb-1 mt-2">
+                    <label class="mb-2" for="">Documento</label>
+                    <input formControlName="document" type="text" class="form-control form-control-sm">
+                </div>
+                <div class="mb-1 mt-2">
+                    <label class="mb-2" for="">Fecha de nacimiento</label>
+                    <input formControlName="born_date" type="date" class="form-control form-control-sm">
+                </div>
+                <div class="mb-1 mt-2">
+                    <label class="mb-2" for="">Ciudad</label>
+                    <select formControlName="city" type="text" class="form-control form-control-sm">
+                        <option value="1" selected>Bogotá</option>
+                        <option value="2">Medellín</option>
+                        <option value="3">Cali</option>
+                        <option value="4">Barranquilla</option>
+                        <option value="5">Cúcuta</option>
+                        <option value="6">Soledad</option>
+                        <option value="7">Bucaramanga</option>
+                    </select>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="col-12 mt-2" style="padding-left: 19%; padding-right: 19%;">
+                            <input class="btn btn-primary mt-2 form-control" (click)="edit()" value="Editar" type="submit"> 
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
